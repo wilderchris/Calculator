@@ -7,12 +7,11 @@ public class App {
 
 	public static void main(String[] args) {
 		 
-	
+		Calc calc = new Calc();
 		System.out.println("CommandLine Calc app : \n Calculator [num] [+ - * /] [num]");
 
 		if (args.length == 0) {
-			//System.out.println("Place holder for UI app");
-			 CalculateUI.GUI();
+			calc.GUI();			 //CalculateUI.GUI();
 		} else {
 			System.out.println("Response :\n\n  " + args[0] + " " + args[1] + " " + args[2] + " = "
 					+ Calculate(Integer.parseInt(args[0]), args[1], Integer.parseInt(args[2])));

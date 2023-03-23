@@ -13,7 +13,8 @@ public class Calc extends JFrame implements ActionListener {
 
     public Calc() {
         super("Calc");
-
+    }
+    public void GUI() {
         textField = new JTextField(20);
         textField.setEditable(false);
         textField.setHorizontalAlignment(JTextField.RIGHT);
@@ -145,6 +146,4 @@ public class Calc extends JFrame implements ActionListener {
         }
     }
 
-    public static void main(String[] args) {
-        new Calc();
-    }}
+    }
