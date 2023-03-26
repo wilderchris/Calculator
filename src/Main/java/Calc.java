@@ -16,6 +16,9 @@ public class Calc extends JFrame implements ActionListener {
     }
     public void GUI() {
         textField = new JTextField(20);
+        
+        textField.setFont(new Font("Arial", Font.BOLD, 50));
+        
         textField.setEditable(false);
         textField.setHorizontalAlignment(JTextField.RIGHT);
 
@@ -77,7 +80,7 @@ public class Calc extends JFrame implements ActionListener {
         container.add(textField, BorderLayout.NORTH);
         container.add(panel, BorderLayout.CENTER);
 
-        setSize(250, 250);
+        setSize(400, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }

@@ -12,7 +12,7 @@ public class App {
 
 		if (args.length == 0) {
 			calc.GUI();			 //CalculateUI.GUI();
-		} else {// asdding additional for updating
+		} else {// adding additional for updating
 			System.out.println("Response :\n\n  " + args[0] + " " + args[1] + " " + args[2] + " = "
 					+ Calculate(Integer.parseInt(args[0]), args[1], Integer.parseInt(args[2])));
 		}
