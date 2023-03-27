@@ -132,6 +132,7 @@ public class Calc extends JFrame implements ActionListener {
         } else if (source == buttonEqual) {
             secondNumber = Double.parseDouble(textField.getText());
 
+            try {
             if (operation.equals("+")) {
                 result = firstNumber + secondNumber;
             } else if (operation.equals("-")) {
@@ -141,11 +142,17 @@ public class Calc extends JFrame implements ActionListener {
             } else if (operation.equals("/")) {
                 result = firstNumber / secondNumber;
             }
-
+            
             textField.setText(Double.toString(result));
             firstNumber = result;
             operation = "";
             secondNumber = 0;
+            }catch(Exception e) {
+            System.out.println("placeholder for error no operation or only equals entered: " + e);
+
+            }
+            
+            
         }
     }
 
