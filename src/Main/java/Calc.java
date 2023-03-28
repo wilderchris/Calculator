@@ -148,7 +148,9 @@ public class Calc extends JFrame implements ActionListener {
             operation = "";
             secondNumber = 0;
             }catch(Exception e) {
-            System.out.println("placeholder for error no operation or only equals entered: " + e);
+            	JOptionPane.showMessageDialog(null, "Must choose an operation [+, -, *, /] before pressing equals");
+
+            System.out.println("only equals entered: " + e);
 
             }
             
